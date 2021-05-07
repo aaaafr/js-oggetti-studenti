@@ -53,10 +53,12 @@ console.log(classe.push(studente));
 
 for(var i = 0; i < classe.length; i++){
     var elenco = classe[i];
-    console.log(classe);
+    // console.log(classe);
 
      for(var chiave in elenco){
-         console.log(chiave, elenco.nome, elenco.cognome);
+         console.log(elenco);
+        //  console.log(chiave, elenco);
+        //  console.log(chiave, elenco.nome, elenco.cognome);
          
      }
 }
