@@ -48,27 +48,6 @@ var  classe =
 
 console.log(classe);
 console.log(classe.push(studente));
-// Ciclare su tutti gli studenti e 
-// stampare per ognuno di essi, nome e cognome.
-
-for(var i = 0; i < classe.length; i++){
-    var elenco = classe[i];
-    // console.log(classe);
-
-     for(var chiave in elenco){
-         console.log(elenco);
-        //  console.log(chiave, elenco);
-        //  console.log(chiave, elenco.nome, elenco.cognome);
-         
-     }
-}
-
-
-
-// Dare la possibilità all’utente, 
-// attraverso 3 prompt(),
-//  di aggiungere un nuovo oggetto studente 
-// inserendo nell’ordine: nome, cognome e età.
 
 var nuovoStudente = {
     "nome" : prompt("Inserisci nome"),
@@ -78,3 +57,22 @@ var nuovoStudente = {
 
 console.log(nuovoStudente);
 console.log(classe.push(nuovoStudente));
+
+// Ciclare su tutti gli studenti e 
+// stampare per ognuno di essi, nome e cognome.
+for(var i = 0; i < classe.length; i++){
+    var elenco = classe[i];
+    console.log(classe);
+    console.log(elenco.nome, elenco.cognome);
+    document.writeln(elenco.nome + " " + elenco.cognome);
+
+}
+
+
+
+
+// Dare la possibilità all’utente, 
+// attraverso 3 prompt(),
+//  di aggiungere un nuovo oggetto studente 
+// inserendo nell’ordine: nome, cognome e età.
+
